@@ -23,8 +23,10 @@ function contarCaracter() {
 	
 	contador.innerHTML = resta;
 	
-	if (contar == 0) {
+	if (contar.trim() == 0) {
 		boton.disabled = true;
+	} else {
+		boton.disabled = false;	
 	}
 	
 }
