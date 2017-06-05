@@ -14,6 +14,8 @@ function imprimirTexto(e) {
 	parrafo.innerHTML = tweet.value;
 	
 	areaDeTweets.appendChild(parrafo);
+	
+	tweet.value = ("");
 }
 
 function contarCaracter() {
@@ -23,12 +25,11 @@ function contarCaracter() {
 	
 	contador.innerHTML = resta;
 	
-	if (contar.trim() == 0) {
+	if (contar.trim == 0) {
 		boton.disabled = true;
 	} else {
 		boton.disabled = false;	
 	}
-	
 }
 
 
